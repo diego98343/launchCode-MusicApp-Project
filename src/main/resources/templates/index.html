@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body class = "container" style="padding-bottom:75px;background:whitesmoke">
+
+
+<h1 style="text-align:center">Music Forum</h1>
+
+<div th:insert="fragments :: navbar"></div>
+<div>
+
+<p>Find your music community. Sign in to join the discussion.</p>
+
+<form method="post">
+    <div class="form-group">
+        <label>Username
+            <input class="form-control">
+        </label>
+        <p class="error"></p>
+
+    <p style = "text-align:center">NAV BAR TO BE ADDED</p>
+</div>
+
+<div id="Main">
+
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Forum</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Category 1</li>
+        </ol>
+    </nav>
+    <div class="forum-buttons">
+        <button class="button-55"><a href="#"><strong>New Thread</strong></a></button>
+        <button class="button-55"><a href="#"><strong>New Category</strong></a></button>
+    </div>
+    <br>
+
+    <div class="forum-container">
+        <div class="category">
+            <h3><a href="#">Category 1</a> </h3>
+            <p>latest posts will go here</p>
+        </div>
+        <div class="category">
+            <h3><a href="#">Category 2</a> </h3>
+            <p>latest posts will go here</p>
+        </div>
+        <div class="category">
+            <h3><a href="#">Category 3</a> </h3>
+            <p>latest posts will go here</p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div th:fragment="login">
+
+    <p>Find your music community. Sign in to join the discussion.</p>
+
+    <form method="post">
+        <div class="form-group">
+            <label>Username
+                <input class="form-control">
+            </label>
+            <p class="error"></p>
+        </div>
+        <div class="form-group">
+            <label>Password
+                <input class="form-control" type="password">
+            </label>
+            <p class="error"></p>
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="Log In" />
+    </form>
+
+    <br>
+
+    <p>Don't have an account? <a href="/register">Register for one here.</a></p>
+
+</div>
+</html>
+
+<div th:fragment="navbar" class="navbar navbar-expand-md bg-dark navbar-dark">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a th:href="@{/}" class="navbar-brand">Forum</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a class="nav-link" th:href="@{/explore/main}">Explore</a></li>
+                <li><a class="nav-link" th:href="@{/login/main}">Login</a></li>
+                <li><a class="nav-link" th:href="@{/register/main}">Register</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
